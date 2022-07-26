@@ -8,7 +8,7 @@ shareMessage.control = false
 for(let i = 0; i < socialMedias.length; i++) {
     socialMedias[i].addEventListener('click', function () {
         if(socialMedias[i].id == 1) {
-            window.open("https://www.facebook.com", "_blank")
+            window.open("https://www.facebook.com/sharer/sharer.php?u=article-preview-card-phi.vercel.app/", "_blank")
         }
         else if (socialMedias[i].id == 2) {
             window.open("https://www.twitter.com", "_blank")
