@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+:root {
+    --font-main: 'Manrope', sans-serif;
+    --color-p: hsl(214, 17%, 51%);  
+    --color-h1: hsl(217, 19%, 35%);
+    --color-date: hsl(212, 23%, 69%);
+    --color-bg: hsl(210, 46%, 95%);
+    --color-card-bg: rgb(255, 255, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    font-family: var(--font-main);
+    font-size: 13px;
+    background-color: var(--color-bg);
+}
+
+.card {
+    margin: auto;
+    margin-top: 16%;
+    max-width: 720px;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: var(--color-card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-image {
+    background-image: url(/images/drawers.jpg);
+    background-size: cover;
+    background-position: left;
+    flex: 0 1 auto;
+    width: 47%;
+}
+
+
+.card-info {
+    padding: 35px;
+    flex: 1 1 auto;
+    width: 60%;
+}
+
+.card-info > h1 {
+    font-size: 20px;
+    color: var(--color-h1);
+}
+
+.card-info > p {
+    margin: 15px 0;
+    color: var(--color-p);
+}
+
+.card-info-bottom {
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-info-bottom > img {
+    width: 40px;
+    border-radius: 30px;
+}
+
+.div-name-date {
+    margin-left: -150px;
+}
+
+.div-name-date > div {
+    color: var(--color-h1);
+    font-weight: 700;
+}
+
+.div-name-date > span {
+    color: var(--color-date);
+}
+
+.div-share {
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-bg);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.div-share > img {
+    width: 15px;
+    height: 15px;
+}
+
+.share-message-desktop {
+    display: none;
+    top: 0;
+    right: 0;
+    width: 190px;
+    height: 55px;
+    padding: 0 25px;
+    position: absolute;
+    background-color: var(--color-h1);
+    color: white;
+    border-radius: 8px;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.185);
+}
+
+.share-message-desktop:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--color-h1);
+    bottom: -20px;
+    left: 43%;
+}
+
+.share-message-desktop > span {
+    color: var(--color-date);
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+
+.fa-brands {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.fa-brands:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.share-message-mobile {
+    display: none;
+    width: 320px;
+    height: 65px;
+    padding: 0 30px;
+    background-color: var(--color-h1);
+    color: white;
+    border-radius: 0;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.share-message-mobile > span {
+    color: var(--color-date);
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+
+.div-share-mobile {
+    margin: 0 0 0 40px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: var(--color-bg);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .card {
+        margin-top: 20%;
+        flex-direction: column;
+        max-width: 320px;
+    }
+
+    .card-image {
+        height: 200px;
+        width: 100%;
+        background-position: 0 -14px;
+    }
+
+    .card-info {
+        width: 100%;
+        padding: 30px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .card-info > h1 {
+        margin: 5px 0 0 0;
+        font-size: 16px;
+    }
+
+    .card-info-bottom {
+        margin: 40px 0 0 0;
+        
+    }
+
+    .div-name-date {
+        margin: 0 40px 0 0;
+    }
+
+    
+
+}
