@@ -11,10 +11,10 @@ for(let i = 0; i < socialMedias.length; i++) {
             window.open("https://www.facebook.com/sharer/sharer.php?u=article-preview-card-phi.vercel.app/", "_blank")
         }
         else if (socialMedias[i].id == 2) {
-            window.open("https://www.twitter.com", "_blank")
+            window.open("https://twitter.com/intent/tweet?url=article-preview-card-phi.vercel.app/", "_blank")
         }
         else {
-            window.open("https://www.pinterest.com", "_blank")
+            window.open("https://www.pinterest.com/pin/create/button/?url=article-preview-card-phi.vercel.app/", "_blank")
         }
     })
 }
